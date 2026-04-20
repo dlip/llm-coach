@@ -2,7 +2,7 @@
 
 An automated, LLM-powered coaching framework built entirely in Obsidian Markdown. The repository ships with a default persona—**Tony**, a world-class executive life coach.
 
-The architecture is entirely text-based, allowing you to feed your daily natural language notes, external metrics, and systemic goals directly into an LLM. This repository ships with a `CLAUDE.md` workflow that allows you to easily recreate your coach's persona. When you change the persona, the framework automatically regenerates all of the periodic planning and review prompts to match your new coach's tone and methodology.
+The architecture is entirely text-based, allowing you to feed your daily natural language notes, external metrics, and systemic goals directly into an LLM. This repository ships with a `CLAUDE.md` workflow that allows you to easily recreate your coach's persona. When you change the persona, the framework updates your coach's tone and methodology while leaving your core planning and review prompts intact.
 
 ***
 
@@ -94,10 +94,15 @@ The repository ships with a default world-class life coach persona. If you'd lik
 Change the persona
 ```
 
-The AI will follow the workflow in `CLAUDE.md` and ask one question at a time to establish your new coach. It will then automatically regenerate:
+The AI will follow the workflow in `CLAUDE.md` and ask one question at a time to establish your new coach, suggesting some names but allowing you to choose your own. It will then generate a new `prompts/persona.md` file without modifying any other system scripts.
 
-- `prompts/persona.md`
-- All periodic plan and review prompts (`yearly_plan.md`, `weekly_review.md`, etc.) to match the new persona.
+If you just want to make minor adjustments without a full rewrite, you can instead issue:
+
+```text
+Tweak the persona
+```
+
+This will apply smaller tweaks directly to your existing `prompts/persona.md`.
 
 ### 3. Bootstrapping Your System
 

@@ -14,10 +14,23 @@ If the user wants to change their coach's identity, they will issue the command:
 `Change the persona`
 
 When this command is issued:
-1. Interview the user to understand what sort of coach they want, their preferred tone, tracked domains, and operating rules.
+1. Interview the user to understand what sort of coach they want, their preferred tone, tracked domains, and operating rules. Suggest some names for the new persona, but explicitly allow them to choose their own.
 2. Ask one question at a time.
 3. Once you have enough information, generate a new `/prompts/persona.md` file.
-4. **CRITICAL:** After recreating `persona.md`, you MUST automatically regenerate all of the periodic plan and review prompts (`daily_plan.md`, `daily_review.md`, `weekly_plan.md`, `weekly_review.md`, `monthly_plan.md`, `monthly_review.md`, `quarterly_plan.md`, `quarterly_review.md`, `yearly_plan.md`, `yearly_review.md`) inside the `/prompts/` directory to ensure their tone, instructions, and interview flows match the newly established persona.
+
+Note: Changes to the persona should NOT generate or modify any other scripts.
+
+---
+
+# Tweaking the Persona
+
+If the user wants to make minor adjustments to their current coach without a full rewrite, they will issue the command:
+`Tweak the persona`
+
+When this command is issued:
+1. Ask the user what specific adjustments they want to make to the current persona (e.g., tone, domains tracked, rules).
+2. Update the existing `/prompts/persona.md` file with these minor tweaks.
+3. Do not generate or modify any other scripts.
 
 ---
 
