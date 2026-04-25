@@ -12,7 +12,7 @@ Always read `/domains/` to understand what the user is actively tracking.
 **`Setup`** — Onboard a new user from scratch. Work through the three phases below in order. Ask one question at a time throughout.
 
 ### Phase 1 — Coach
-Interview the user to define their coach: preferred style, tone, values, and what they most want from a coaching relationship. Suggest a name but let them choose. Once agreed, write `/COACH.md` before proceeding. This coach identity will shape everything that follows.
+Interview the user to define their coach: preferred style, tone, values, and what they most want from a coaching relationship. Suggest a name but let them choose. Also establish how the coach approaches planning (e.g. vision-first, outcome-focused, obstacle-aware) and reviews (e.g. celebration-first, honest reflection, single key insight). Once agreed, write `/COACH.md` before proceeding — including identity, tone, rules, and a `## Planning & Review Strategy` section. This coach identity will shape everything that follows.
 
 ### Phase 2 — Domains
 Using the coach's values, style, and the user's stated goals as a lens, explore what areas of life the user wants to actively manage and improve. Propose 3–5 Domains that reflect both what the user needs and what the coach would naturally prioritise. Refine with them. Get explicit approval, then create `/domains/{name}.md` for each — including purpose, why it matters to the user, and any relevant standards or metrics. Write in the coach's voice.
