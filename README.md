@@ -85,35 +85,17 @@ This system relies heavily on Obsidian's core features (Templates, Daily Notes) 
    ```
 4. Open the cloned folder (`llm-coach`) as a **Vault in Obsidian**.
 
-### 2. Customizing Your Coach
+### 2. Setting Up Your Coach
 
-The repository ships with a default AI life coach persona. If you'd like to change the style, focus, or domains your coach tracks, start a session with your AI tool and ask it to change the persona. For example:
-
-```text
-Change the persona
-```
-
-The AI will follow the workflow in `AGENTS.md` and ask one question at a time to establish your new coach, suggesting some names but allowing you to choose your own. It will then generate a new `COACH.md` file without modifying any other system scripts.
-
-If you just want to make minor adjustments without a full rewrite, you can instead issue:
+Run the single setup command to create your coach and configure your domains and systems in one guided session:
 
 ```text
-Tweak the persona
+Setup
 ```
 
-This will apply smaller tweaks directly to your existing `COACH.md`.
+The LLM will interview you one question at a time — first to establish your coaching style, tone, and goals (writing the result to `COACH.md`), then to identify your Domains and Systems and generate the corresponding files in `domains/` and `systems/`. `COACH.md` is not committed to the repo, so it stays personal to your vault.
 
-### 3. Setting Up Your Domains and Systems
-
-Before planning, tell the LLM what areas of your life you want to track. Domains are the core areas of ongoing responsibility (e.g. Health, Career, Finances), and Systems are the routines and mechanisms that support them (e.g. Morning Routine, Weekly Review).
-
-```text
-Set up the system
-```
-
-The LLM will interview you one question at a time to identify your Domains and Systems, then generate the corresponding files in `domains/` and `systems/`. These files are referenced during every planning and review session, so it's worth getting them right before you start.
-
-### 4. Bootstrapping Your Plan
+### 3. Bootstrapping Your Plan
 
 Once your domains and systems are in place, establish your baseline plan. Ask the LLM to guide you, for example:
 
