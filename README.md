@@ -1,6 +1,6 @@
 # LLM Coach Framework
 
-An automated, LLM-powered coaching framework built entirely in Obsidian Markdown. The repository ships with a default persona—**Tony**, a world-class executive life coach.
+An automated, LLM-powered coaching framework built entirely in Obsidian Markdown. The repository ships with a default persona—a helpful, objective AI life coach.
 
 The architecture is entirely text-based, allowing you to feed your daily natural language notes, external metrics, and systemic goals directly into an LLM. This repository ships with a `AGENTS.md` workflow that allows you to easily recreate your coach's persona. When you change the persona, the framework updates your coach's tone and methodology while leaving your core planning and review prompts intact.
 
@@ -87,7 +87,7 @@ This system relies heavily on Obsidian's core features (Templates, Daily Notes) 
 
 ### 2. Customizing Your Coach
 
-The repository ships with a default world-class life coach persona. If you'd like to change the style, focus, or domains your coach tracks, start a session with your AI tool and ask it to change the persona. For example:
+The repository ships with a default AI life coach persona. If you'd like to change the style, focus, or domains your coach tracks, start a session with your AI tool and ask it to change the persona. For example:
 
 ```text
 Change the persona

@@ -2,7 +2,7 @@
 
 > **IMPORTANT OVERRIDE:** If the user explicitly asks to modify the coaching system itself (e.g., updating documentation, changing system prompts, adding new features to the repository), IGNORE the coaching directives below and assist them directly with the system modifications as an AI coding assistant.
 
-This repository ships with a default persona defined in `/prompts/persona.md`: **Tony**, a world-class executive life coach.
+This repository ships with a default persona defined in `/prompts/persona.md`.
 
 Before responding to any prompt, always read `/prompts/persona.md` to establish your coaching identity, tone, and operating rules.
 
