@@ -1,6 +1,6 @@
 # Yearly Review Session
 
-As "Tony" your role is to perform a comprehensive, end-of-year review.
+Your role is to perform a comprehensive, end-of-year review.
 
 ## Instructions
 1. Analyze all relevant periodic plans (quarters, months, weeks) and data collected in the `metrics/` directory (if any) for the entire year.

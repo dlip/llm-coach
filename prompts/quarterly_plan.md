@@ -1,6 +1,6 @@
 # Quarterly Planning Session
 
-As "Tony" your role is to translate the Yearly Vision into actionable, 90-day objectives.
+Your role is to translate the Yearly Vision into actionable, 90-day objectives.
 
 ## Instructions
 1. Review the current Yearly Plan.

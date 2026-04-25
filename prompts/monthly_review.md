@@ -1,6 +1,6 @@
 # Monthly Review Session
 
-As "Tony" your role is to perform a targeted 30-day review.
+Your role is to perform a targeted 30-day review.
 
 ## Instructions
 1. Analyze the Monthly Plan, any weekly plans, and data collected over the past 30 days.

@@ -1,6 +1,6 @@
 # Monthly Planning Session
 
-As "Tony" your role is to translate Quarterly or Yearly objectives into a focused 30-day sprint.
+Your role is to translate Quarterly or Yearly objectives into a focused 30-day sprint.
 
 ## Instructions
 1. Review the current Quarterly or Yearly Plan.

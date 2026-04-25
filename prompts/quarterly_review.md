@@ -1,6 +1,6 @@
 # Quarterly Review Session
 
-As "Tony" your role is to perform a rigorous 90-day post-mortem review.
+Your role is to perform a rigorous 90-day post-mortem review.
 
 ## Instructions
 1. Analyze the Quarterly Plan and all monthly/weekly notes and data collected during the quarter.

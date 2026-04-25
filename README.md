@@ -2,7 +2,7 @@
 
 An automated, LLM-powered coaching framework built entirely in Obsidian Markdown. The repository ships with a default persona—**Tony**, a world-class executive life coach.
 
-The architecture is entirely text-based, allowing you to feed your daily natural language notes, external metrics, and systemic goals directly into an LLM. This repository ships with a `CLAUDE.md` workflow that allows you to easily recreate your coach's persona. When you change the persona, the framework updates your coach's tone and methodology while leaving your core planning and review prompts intact.
+The architecture is entirely text-based, allowing you to feed your daily natural language notes, external metrics, and systemic goals directly into an LLM. This repository ships with a `AGENTS.md` workflow that allows you to easily recreate your coach's persona. When you change the persona, the framework updates your coach's tone and methodology while leaving your core planning and review prompts intact.
 
 ***
 
@@ -93,7 +93,7 @@ The repository ships with a default world-class life coach persona. If you'd lik
 Change the persona
 ```
 
-The AI will follow the workflow in `CLAUDE.md` and ask one question at a time to establish your new coach, suggesting some names but allowing you to choose your own. It will then generate a new `prompts/persona.md` file without modifying any other system scripts.
+The AI will follow the workflow in `AGENTS.md` and ask one question at a time to establish your new coach, suggesting some names but allowing you to choose your own. It will then generate a new `prompts/persona.md` file without modifying any other system scripts.
 
 If you just want to make minor adjustments without a full rewrite, you can instead issue:
 
@@ -128,7 +128,7 @@ Instead of maintaining a separate review log, **all reviews are LLM-driven and a
 
 Whenever you need a review (end of week, month, or when feeling stuck):
 
-1. Ask your LLM (using the `CLAUDE.md` context) to run a review.
+1. Ask your LLM (using the `AGENTS.md` context) to run a review.
 2. The LLM will analyze any external structured data placed in `metrics/` (e.g., Apple Health exports), your recent `daily/` notes, and your active periodic plan.
 3. The LLM will append a new section to the `# Review` heading containing:
    - Data & Goal Evaluation
@@ -141,7 +141,7 @@ Whenever you need a review (end of week, month, or when feeling stuck):
 
 ## 🤖 How to interact with the LLM
 
-Because this repository includes a `CLAUDE.md` file, AI coding assistants and IDEs will automatically recognize your coaching rules. You can interact with the system in two ways:
+Because this repository includes a `AGENTS.md` file, AI coding assistants and IDEs will automatically recognize your coaching rules. You can interact with the system in two ways:
 
 ### Option A: Using Claude Code
 
@@ -152,7 +152,7 @@ If you use Anthropic's official CLI tool, [Claude Code](https://docs.anthropic.c
    ```bash
    claude
    ```
-3. Claude Code will automatically read `CLAUDE.md` and use the established coach configuration.
+3. Claude Code will automatically read `AGENTS.md` and use the established coach configuration.
 4. Interact with your coach directly from the terminal (e.g., "Change the persona" or "Help me create my plan for this year").
 
 ### Option B: Using an AI IDE
@@ -160,6 +160,6 @@ If you use Anthropic's official CLI tool, [Claude Code](https://docs.anthropic.c
 If you use an AI-powered IDE like Trae, Cursor, or Windsurf:
 
 1. Open the cloned repository in your IDE.
-2. Open the chat panel. The IDE will automatically read `CLAUDE.md` as the system instructions.
+2. Open the chat panel. The IDE will automatically read `AGENTS.md` as the system instructions.
 3. Start by asking the AI to guide your planning, or ask it to customize your coach. (e.g., "Help me create my plan for this year").
 

@@ -1,6 +1,6 @@
 # Weekly Review Session
 
-As "Tony" your role is to perform a rapid 7-day post-mortem and course correction.
+Your role is to perform a rapid 7-day post-mortem and course correction.
 
 ## Instructions
 1. Analyze the Weekly Plan and the daily notes (`daily/YYYY-MM-DD.md`) collected over the past 7 days.

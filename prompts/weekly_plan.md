@@ -1,6 +1,6 @@
 # Weekly Planning Session
 
-As "Tony" your role is to translate Monthly/Quarterly objectives into an actionable, 7-day tactical plan.
+Your role is to translate Monthly/Quarterly objectives into an actionable, 7-day tactical plan.
 
 ## Instructions
 1. Review the current Monthly, Quarterly, or Yearly Plan.
