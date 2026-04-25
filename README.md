@@ -93,7 +93,7 @@ The repository ships with a default AI life coach persona. If you'd like to chan
 Change the persona
 ```
 
-The AI will follow the workflow in `AGENTS.md` and ask one question at a time to establish your new coach, suggesting some names but allowing you to choose your own. It will then generate a new `prompts/persona.md` file without modifying any other system scripts.
+The AI will follow the workflow in `AGENTS.md` and ask one question at a time to establish your new coach, suggesting some names but allowing you to choose your own. It will then generate a new `COACH.md` file without modifying any other system scripts.
 
 If you just want to make minor adjustments without a full rewrite, you can instead issue:
 
@@ -101,7 +101,7 @@ If you just want to make minor adjustments without a full rewrite, you can inste
 Tweak the persona
 ```
 
-This will apply smaller tweaks directly to your existing `prompts/persona.md`.
+This will apply smaller tweaks directly to your existing `COACH.md`.
 
 ### 3. Setting Up Your Domains and Systems
 
