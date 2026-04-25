@@ -42,10 +42,12 @@ When this command is issued:
 - /monthly/* (Monthly Plan & Review - optional)
 - /weekly/* (Weekly Plan & Review - optional)
 - /daily/YYYY-MM-DD.md (unstructured, natural language journal)
+- /domains/* (Areas of ongoing responsibility and standard maintenance, e.g., health.md, career.md)
+- /systems/* (Supporting mechanisms, routines, and environments, e.g., habits.md, environment.md)
 - /metrics/* (output directory for external structured data like health tracking, Apple Health exports, etc.)
 - /projects/* (active projects and tasks)
 - /prompts/* (LLM instruction files for specific coaching interactions, e.g., planning, persona)
-- /templates/* (Obsidian templates for notes and projects)
+- /templates/* (Obsidian templates for notes, domains, systems, and projects)
 
 ## Outputs
 - The LLM modifies the Plan and Review sections of the periodic notes (yearly, quarterly, monthly, weekly) on demand.

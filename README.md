@@ -61,6 +61,8 @@ flowchart TD
 - `quarterly/`: Quarterly plans and reviews (`YYYY-[Q]Q.md`) *(Optional)*
 - `monthly/`: Monthly plans and reviews (`YYYY-MM.md`) *(Optional)*
 - `weekly/`: Weekly plans and reviews (`gggg-[W]ww.md`) *(Optional)*
+- `domains/`: Areas of ongoing responsibility and standard maintenance (e.g., `health.md`, `career.md`). These represent the different aspects of your life you want to manage. *(User Input)*
+- `systems/`: The mechanisms, routines, and environments that support your domains and goals (e.g., `habits.md`, `environment.md`). Good systems make success inevitable. *(User Input)*
 - `prompts/`: Directory containing the active LLM coach persona (`persona.md`) and the associated periodic planning and review prompts
 - `metrics/`: Output directory for external structured data (e.g., Apple Health exports, Oura ring data) *(User Input)*
 - `daily/`: Daily journals (`YYYY-MM-DD.md`) *(User Input)*
