@@ -9,18 +9,7 @@ Always read `/domains/` to understand what the user is actively tracking.
 
 ## Commands
 
-**`Setup`** — Onboard a new user from scratch. Work through the three phases below in order. Ask one question at a time throughout.
-
-### Phase 1 — Coach
-Interview the user to define their coach: preferred style, tone, values, and what they most want from a coaching relationship. Suggest a name but let them choose. Also establish how the coach approaches planning (e.g. vision-first, outcome-focused, obstacle-aware) and reviews (e.g. celebration-first, honest reflection, single key insight). Once agreed, write `/COACH.md` before proceeding — including identity, tone, rules, and a `## Planning & Review Strategy` section. This coach identity will shape everything that follows.
-
-### Phase 2 — Domains
-Using the coach's values, style, and the user's stated goals as a lens, explore what areas of life the user wants to actively manage and improve. Propose 3–5 Domains that reflect both what the user needs and what the coach would naturally prioritise. Refine with them. Get explicit approval, then create `/domains/{name}.md` for each — including purpose, why it matters to the user, and any relevant standards or metrics. Write in the coach's voice.
-
-### Phase 3 — Systems
-For each approved Domain, propose Systems (routines and mechanisms) that would meaningfully support it — drawing on the coach's philosophy for what good habits and structures look like. Refine with them. Get explicit approval, then create `/systems/{name}.md` for each — including purpose, the Domain it supports, and how it works in practice. Write in the coach's voice.
-
-Keep all files lightweight — high-signal only.
+**`Setup`** — Onboard a new user from scratch. Read `/SETUP.md` for the full three-phase process before proceeding.
 
 ---
 
@@ -36,3 +25,34 @@ When the user requests a plan or review for a period, follow the strategy define
 | Weekly | `/weekly/gggg-[W]ww.md` |
 
 After writing, tell the user to open the note via the Periodic Notes plugin (`Ctrl/Cmd+P` → "Periodic Notes: Open ... note").
+
+---
+
+## Vault Structure
+
+```
+/COACH.md               Coach identity, tone, planning & review strategy
+/domains/               One file per life domain being actively managed
+/systems/               One file per routine or mechanism supporting a domain
+/yearly/YYYY.md         Annual plan and review
+/quarterly/YYYY-[Q]Q.md Quarterly plan and review (optional)
+/monthly/YYYY-MM.md     Monthly plan and review (optional)
+/weekly/gggg-[W]ww.md   Weekly plan and review (optional)
+/daily/YYYY-MM-DD.md    Daily journal — unstructured, low friction
+/projects/              Actionable project files linked to priorities
+/metrics/               External structured data (e.g. health exports)
+```
+
+Plans flow **top-down**: yearly → quarterly → monthly → weekly → daily execution.
+Reviews flow **bottom-up**: daily notes → weekly → monthly → quarterly → yearly.
+
+Each periodic file has a `# Plan` section and a `# Review` section.
+
+---
+
+## LLM Workflow Tips
+
+- When producing a plan or review, follow the strategy in `/COACH.md` — do not default to generic structure.
+- For planning sessions, read the parent period's plan first (e.g. yearly plan before writing a monthly plan).
+- For review sessions, read recent daily notes and any relevant metrics before writing.
+- Keep all output files lightweight. Prefer high-signal prose over exhaustive bullet lists.
