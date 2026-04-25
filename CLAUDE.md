@@ -59,7 +59,7 @@ The system uses a top-down approach where long-term plans inform shorter-term ac
 1. **Yearly**: Sets the overarching vision and goals.
 2. **Quarterly/Monthly**: Translates the yearly vision into focused objectives and projects.
 3. **Weekly**: Translates monthly objectives into tactical, actionable plans.
-4. **Daily**: The daily notes are unstructured natural language journals used as inputs for periodic reviews.
+4. **Daily**: The daily notes are unstructured natural language journals used for executing plans from higher levels and as inputs for periodic reviews.
 
 ---
 
@@ -74,7 +74,6 @@ When the user requests to create or update their long-term plan (e.g., "Help me 
    - Quarterly: `/quarterly/YYYY-[Q]Q.md`
    - Monthly: `/monthly/YYYY-MM.md`
    - Weekly: `/weekly/gggg-[W]ww.md`
-   - Daily: `/daily/YYYY-MM-DD.md`
 6. Instruct the user to use the pre-installed Periodic Notes plugin to open the note for the current period so they don't need to be concerned with the file format. They can press `Cmd` or `Ctrl + P` to open the command palette and search for `Periodic Notes: Open daily note` (or weekly, monthly, etc.).
 
 ---
@@ -87,7 +86,6 @@ Append the review output directly to the `# Review` section of the relevant peri
 - Quarterly: `/quarterly/YYYY-[Q]Q.md`
 - Monthly: `/monthly/YYYY-MM.md`
 - Weekly: `/weekly/gggg-[W]ww.md`
-- Daily: `/daily/YYYY-MM-DD.md`
 
 After appending the review, instruct the user to use the pre-installed Periodic Notes plugin to open the note for the current period so they don't need to be concerned with the file format. They can press `Cmd` or `Ctrl + P` to open the command palette and search for `Periodic Notes: Open daily note` (or weekly, monthly, etc.).
 

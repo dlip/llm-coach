@@ -23,25 +23,22 @@ flowchart TD
     QPlan[Quarterly Plan]
     MPlan[Monthly Plan]
     WPlan[Weekly Plan]
-    DPlan[Daily Plan]
     
-    DRev[Daily Review]
     WRev[Weekly Review]
     MRev[Monthly Review]
     QRev[Quarterly Review]
     YRev[Yearly Review]
 
+    DExec[Daily Execution & Journal]
+
     %% Top-Down Planning Flow
     YPlan -->|informs| QPlan
     QPlan -->|informs| MPlan
     MPlan -->|informs| WPlan
-    WPlan -->|informs| DPlan
-
-    %% Daily execution bridge
-    DPlan --> DRev
+    WPlan -->|informs| DExec
 
     %% Bottom-Up Review Flow
-    DRev -->|synthesized into| WRev
+    DExec -->|synthesized into| WRev
     WRev -->|synthesized into| MRev
     MRev -->|synthesized into| QRev
     QRev -->|synthesized into| YRev
@@ -55,7 +52,7 @@ flowchart TD
 
 1. **Direction & Strategy (Plan)**: Long-term trajectory, domain alignment, periodic objectives, and current active priorities (all unified in one periodic file).
 2. **Execution (Projects)**: Actionable breakdowns bridging priorities to daily tasks.
-3. **Action (Daily)**: Proactive morning intent and reactive evening reflection, using purely natural language.
+3. **Action (Daily)**: Executing plans from higher levels and logging unstructured natural language journal entries.
 4. **Accountability (Reviews)**: 100% LLM-driven continuous coaching logs.
 
 ### Directory Structure
@@ -118,19 +115,10 @@ Once the plan is generated, create new files in the `projects/` folder for any p
 
 ### 4. The Daily Workflow
 
-The daily tracking relies entirely on unstructured natural language text to minimize friction. No daily metrics or YAML frontmatter are required here.
+The daily tracking relies entirely on unstructured natural language text to minimize friction. Use the daily note to execute plans from higher levels and maintain a journal. No daily metrics or YAML frontmatter are required here.
 
-#### Morning (Proactive)
-
-1. Use the pre-installed Periodic Notes plugin to open the note for the current period so you don't need to be concerned with the file format. Press `Cmd` or `Ctrl + P` to open the command palette and search for `Periodic Notes: Open daily note`.
-2. Fill out the **Plan** section:
-   - Write a quick unstructured brain-dump or list of what you intend to do. Ensure your intentions advance your active priorities.
-
-#### Evening (Reactive)
-
-1. Return to the Daily Note.
-2. Complete the **Review** section:
-   - Write a brief summary of what happened, what moved forward, what didn't, and any constraints you faced.
+1. Use the pre-installed Periodic Notes plugin to open the note for the current day. Press `Cmd` or `Ctrl + P` to open the command palette and search for `Periodic Notes: Open daily note`.
+2. Write a quick unstructured brain-dump or list of what you intend to do, execute on your weekly plan, and log a brief summary of what happened during the day.
 
 ### 5. LLM-Driven Reviews (Continuous Coaching)
 
