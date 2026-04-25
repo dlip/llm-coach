@@ -103,9 +103,19 @@ Tweak the persona
 
 This will apply smaller tweaks directly to your existing `prompts/persona.md`.
 
-### 3. Bootstrapping Your System
+### 3. Setting Up Your Domains and Systems
 
-Once you're happy with your coach's persona, establish your baseline. Ask the LLM to guide you, for example:
+Before planning, tell the LLM what areas of your life you want to track. Domains are the core areas of ongoing responsibility (e.g. Health, Career, Finances), and Systems are the routines and mechanisms that support them (e.g. Morning Routine, Weekly Review).
+
+```text
+Set up the system
+```
+
+The LLM will interview you one question at a time to identify your Domains and Systems, then generate the corresponding files in `domains/` and `systems/`. These files are referenced during every planning and review session, so it's worth getting them right before you start.
+
+### 4. Bootstrapping Your Plan
+
+Once your domains and systems are in place, establish your baseline plan. Ask the LLM to guide you, for example:
 
 ```text
 Help me create my plan for this year
@@ -115,14 +125,14 @@ The LLM will use the pre-provided `prompts/yearly_plan.md` workflow to interview
 
 Once the plan is generated, create new files in the `projects/` folder for any priority that requires multiple steps. Apply the `Project Template`, which includes `start_date` and `end_date` in the YAML frontmatter, and define the immediate Next Action.
 
-### 4. The Daily Workflow
+### 5. The Daily Workflow
 
 The daily tracking relies entirely on unstructured natural language text to minimize friction. Use the daily note to execute plans from higher levels and maintain a journal. No daily metrics or YAML frontmatter are required here.
 
 1. Use the pre-installed Periodic Notes plugin to open the note for the current day. Press `Cmd` or `Ctrl + P` to open the command palette and search for `Periodic Notes: Open daily note`.
 2. Write a quick unstructured brain-dump or list of what you intend to do, execute on your weekly plan, and log a brief summary of what happened during the day.
 
-### 5. LLM-Driven Reviews (Continuous Coaching)
+### 6. LLM-Driven Reviews (Continuous Coaching)
 
 Instead of maintaining a separate review log, **all reviews are LLM-driven and appended to the** **`# Review`** **section of your periodic notes (e.g.,** **`weekly/gggg-[W]ww.md`** **or** **`monthly/YYYY-MM.md`)**.
 
