@@ -3,9 +3,7 @@ start_date: {{date:YYYY-MM-DD}}
 end_date: 
 ---
 
-# Project Name
-
-## Link to Priority/Goal
+## Link to Domain
 
 
 ## Definition of Done
