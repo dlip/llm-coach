@@ -36,19 +36,43 @@ This coach identity shapes everything that follows. Do not proceed to Phase 2 wi
 
 ## Phase 2 — Domains
 
-Domains are areas of life the user actively manages and wants to improve (e.g. `health-energy`, `career-work`, `finance`, `relationships`, `personal-growth`).
+Domains are areas of life the user actively manages and wants to improve.
 
-Using the coach's values and the user's stated goals as a lens:
-1. Propose 3–5 Domains
-2. Refine with the user
-3. Get explicit approval
+### Step 1 — Propose domains
 
-Then create `/domains/{name}.md` for each. Each file should include:
-- **Purpose** — what this domain covers
-- **Why it matters** — in the user's own terms
-- **Standards or metrics** — any relevant benchmarks or signals to track
+Suggest 5–10 domains drawn from this list (plus any that fit the user's situation):
 
-Write in the coach's voice. Keep files lightweight — high-signal only.
+- Health & Energy
+- Career & Work
+- Finance
+- Relationships
+- Personal Growth
+- Parenting *(if they have children)*
+- Home & Environment
+- Fun & Recreation
+- Creativity
+- Spirituality / Purpose
+- Community & Contribution
+
+Present the list, explain briefly why each was included, and invite the user to add, remove, or rename any. Get explicit approval before proceeding.
+
+### Step 2 — Go deep on each domain
+
+For every approved domain, interview the user to understand their *specific* situation — not generic goals. Ask about:
+- Current state: what's actually going on right now?
+- Goals or desired direction
+- Struggles, blockers, or things being avoided
+- Any relevant context (conditions, constraints, history)
+
+Ask one domain at a time. Go through them all before writing any files.
+
+### Step 3 — Write domain files
+
+Create `/domains/{name}.md` for each. Each file should:
+- Reflect the user's actual situation, not a generic template
+- Describe where they are now and what the coach is watching for
+- Be written in the coach's voice
+- Stay lightweight — high-signal prose, not exhaustive bullet lists
 
 ---
 
