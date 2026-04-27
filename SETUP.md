@@ -56,19 +56,41 @@ Suggest 5–10 domains drawn from this list (plus any that fit the user's situat
 
 Present the list, explain briefly why each was included, and invite the user to add, remove, or rename any. Get explicit approval before proceeding.
 
-### Step 2 — Go deep on each domain
+### Step 2 — Create placeholder files
 
-For every approved domain, interview the user to understand their *specific* situation — not generic goals. Ask about:
+Immediately after approval, create `/domains/{name}.md` for every approved domain with a minimal placeholder:
+
+```markdown
+---
+title: {Domain Name}
+tags:
+  - domain
+  - todo
+status: todo
+---
+
+# {Domain Name}
+
+*To be completed during setup.*
+```
+
+This ensures progress is preserved if the session is interrupted.
+
+### Step 3 — Go deep on each domain
+
+For every domain, interview the user to understand their *specific* situation — not generic goals. Ask about:
 - Current state: what's actually going on right now?
 - Goals or desired direction
 - Struggles, blockers, or things being avoided
 - Any relevant context (conditions, constraints, history)
 
-Ask one domain at a time. Go through them all before writing any files.
+Ask one domain at a time. **After each response, immediately write the full domain file** before moving to the next. Remove the `todo` tag and `status: todo` once written.
 
-### Step 3 — Write domain files
+If setup is resumed after an interruption, check for any domain files still marked `status: todo` and continue from there.
 
-Create `/domains/{name}.md` for each. Each file should:
+### Step 4 — Write domain files
+
+Each completed `/domains/{name}.md` should:
 - Reflect the user's actual situation, not a generic template
 - Describe where they are now and what the coach is watching for
 - Be written in the coach's voice
@@ -80,14 +102,38 @@ Create `/domains/{name}.md` for each. Each file should:
 
 Systems are routines and mechanisms that support Domains (e.g. `morning-routine`, `weekly-review`, `monthly-finance-check`).
 
-For each approved Domain:
-1. Propose Systems that would meaningfully support it, drawing on the coach's philosophy
-2. Refine with the user
-3. Get explicit approval
+### Step 1 — Propose systems
 
-Then create `/systems/{name}.md` for each. Each file should include:
-- **Purpose** — what this system does
-- **Domain** — which domain it supports
-- **How it works** — practical description of the routine or mechanism
+For each domain, propose systems that would meaningfully support it, drawing on the coach's philosophy and what you now know about the user. Present the full proposed list and refine with the user. Get explicit approval before proceeding.
 
-Write in the coach's voice. Keep files lightweight — high-signal only.
+### Step 2 — Create placeholder files
+
+Immediately after approval, create `/systems/{name}.md` for every approved system with a minimal placeholder:
+
+```markdown
+---
+title: {System Name}
+tags:
+  - system
+  - todo
+status: todo
+---
+
+# {System Name}
+
+*To be completed during setup.*
+```
+
+### Step 3 — Go deep on each system
+
+For every system, ask the user about their current habits and context relevant to that system — enough to write something specific and actionable, not generic.
+
+Ask one system at a time. **After each response, immediately write the full system file** before moving to the next. Remove the `todo` tag and `status: todo` once written.
+
+If setup is resumed after an interruption, check for any system files still marked `status: todo` and continue from there.
+
+Each completed `/systems/{name}.md` should:
+- Reflect the user's actual routine and constraints
+- Be practical and specific — not a generic template
+- Be written in the coach's voice
+- Stay lightweight — high-signal only
