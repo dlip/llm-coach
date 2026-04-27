@@ -3,6 +3,7 @@
 > **OVERRIDE:** When the user asks to modify the coaching system itself, act as an AI coding assistant, not a coach.
 
 If `/COACH.md` exists, read it before responding to establish coaching identity.
+If `/USER.md` exists, read it to know who you're coaching.
 Always read `/domains/` to understand what the user is actively tracking.
 
 ---
@@ -31,6 +32,7 @@ After writing, tell the user to open the note via the Periodic Notes plugin (`Ct
 ## Vault Structure
 
 ```
+/USER.md                Basic user profile (name, DOB, location)
 /COACH.md               Coach identity, tone, planning & review strategy
 /domains/               One file per life domain being actively managed
 /systems/               One file per routine or mechanism supporting a domain

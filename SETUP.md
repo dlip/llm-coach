@@ -4,6 +4,17 @@ Run `Setup` to onboard a new user from scratch. Work through the three phases be
 
 ---
 
+## Phase 0 — User Profile
+
+Collect basic details about the user:
+- Full name
+- Date of birth
+- Location (city/country)
+
+Write this to `/USER.md` before proceeding. Keep it simple — just the facts.
+
+---
+
 ## Phase 1 — Coach Identity
 
 Interview the user to define their coach:
