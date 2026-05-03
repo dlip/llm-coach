@@ -16,14 +16,17 @@ Always read `/domains/` to understand what the user is actively tracking.
 
 ## Planning & Reviews
 
-When the user requests a plan or review for a period, follow the strategy defined in `/COACH.md`. Write plans to the `# Plan` section and reviews to the `# Review` section of the relevant file:
+When the user requests a plan or review for a period, follow the strategy defined in `/COACH.md`. Write plans to the `# Plan` section and reviews to the `# Review` section of the relevant file.
 
-| Period | File |
-|---|---|
-| Yearly | `/yearly/YYYY.md` |
-| Quarterly | `/quarterly/YYYY-[Q]Q.md` |
-| Monthly | `/monthly/YYYY-MM.md` |
-| Weekly | `/weekly/gggg-[W]ww.md` |
+**Before creating or writing to any periodic note**, read `/.obsidian/plugins/periodic-notes/data.json` to determine the correct folder, filename format, and template for each period. Do not hardcode paths — always derive them from the config.
+
+For example, given config:
+```json
+"weekly": { "format": "gggg-[W]ww", "folder": "weekly", "template": "templates/Weekly Template.md" }
+```
+The file for the current week would be `weekly/2026-W18.md`.
+
+If the periodic note file does not yet exist, create it using the configured template as the starting content (read the template file first).
 
 After writing, tell the user to open the note via the Periodic Notes plugin (`Ctrl/Cmd+P` → "Periodic Notes: Open ... note").
 
@@ -32,17 +35,19 @@ After writing, tell the user to open the note via the Periodic Notes plugin (`Ct
 ## Vault Structure
 
 ```
-/USER.md                Basic user profile (name, DOB, location)
-/COACH.md               Coach identity, tone, planning & review strategy
-/domains/               One file per life domain being actively managed
-/systems/               One file per routine or mechanism supporting a domain
-/yearly/YYYY.md         Annual plan and review
-/quarterly/YYYY-[Q]Q.md Quarterly plan and review (optional)
-/monthly/YYYY-MM.md     Monthly plan and review (optional)
-/weekly/gggg-[W]ww.md   Weekly plan and review (optional)
-/daily/YYYY-MM-DD.md    Daily journal — unstructured, low friction
-/projects/              Actionable project files linked to priorities
-/metrics/               External structured data (e.g. health exports)
+/USER.md                          Basic user profile (name, DOB, location)
+/COACH.md                         Coach identity, tone, planning & review strategy
+/.obsidian/plugins/periodic-notes/data.json   Periodic Notes plugin config (folder, format, template per period)
+/domains/                         One file per life domain being actively managed
+/systems/                         One file per routine or mechanism supporting a domain
+/yearly/                          Annual plan and review (folder from plugin config)
+/quarterly/                       Quarterly plan and review (folder from plugin config)
+/monthly/                         Monthly plan and review (folder from plugin config)
+/weekly/                          Weekly plan and review (folder from plugin config)
+/daily/                           Daily journal — unstructured, low friction (folder from plugin config)
+/templates/                       Note templates referenced by plugin config
+/projects/                        Actionable project files linked to priorities
+/metrics/                         External structured data (e.g. health exports)
 ```
 
 Plans flow **top-down**: yearly → quarterly → monthly → weekly → daily execution.
