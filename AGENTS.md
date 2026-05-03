@@ -61,5 +61,5 @@ Each periodic file has a `# Plan` section and a `# Review` section.
 
 - When producing a plan or review, follow the strategy in `/COACH.md` — do not default to generic structure.
 - For planning sessions, read the parent period's plan first (e.g. yearly plan before writing a monthly plan).
-- For review sessions, read recent daily notes and any relevant metrics before writing.
+- For review sessions, read recent daily notes and any relevant metrics before writing. When reading daily notes for a period, read each date explicitly — do not rely on glob patterns, as weeks that span month boundaries will leave gaps (e.g. April 30 is missed by both `2026-04-2*.md` and `2026-05-0*.md`).
 - Keep all output files lightweight. Prefer high-signal prose over exhaustive bullet lists.
