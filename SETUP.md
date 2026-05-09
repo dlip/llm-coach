@@ -1,6 +1,6 @@
 # Setup Guide
 
-Run `Setup` to onboard a new user from scratch. Work through the three phases below in order. **Ask one question at a time throughout.**
+Run `Setup` to onboard a new user from scratch. Work through the phases below in order. **Ask one question at a time throughout.**
 
 ---
 
@@ -137,3 +137,41 @@ Each completed `/systems/{name}.md` should:
 - Be practical and specific — not a generic template
 - Be written in the coach's voice
 - Stay lightweight — high-signal only
+
+---
+
+## Phase 4 — Schedule
+
+With domains and systems defined, work with the user to map their actual time. The goal is twofold: capture the fixed shape of their week, and place the new systems into that shape so they have a realistic chance of sticking.
+
+### Step 1 — Capture the existing shape
+
+Interview the user about their typical week. Ask about:
+- Work hours and pattern (remote/office, deep-work vs meeting blocks)
+- Fixed external commitments (school runs, recurring meetings, classes, therapy)
+- Sleep and wake times
+- Mealtimes and family rhythms
+- Recurring evening or weekend obligations
+- Constraints and protected time (e.g. "no work after 18:00", "Saturday mornings are family")
+
+Ask one area at a time. Build up a picture of what the week already looks like before introducing anything new.
+
+### Step 2 — Fit systems into the schedule
+
+Walk through the systems defined in Phase 3 and work with the user to place each one into a specific slot. For each system:
+- Identify a realistic time it can happen given existing commitments
+- Surface conflicts (two systems competing for the same slot, or a system that won't survive the user's actual energy at that time)
+- Adjust the system, the slot, or the frequency until the user believes it will actually happen
+
+This is a coaching conversation, not a scheduling exercise. Push back when something looks aspirational rather than realistic.
+
+### Step 3 — Write `/SCHEDULE.md`
+
+Write a single lightweight file capturing:
+- **Weekly shape** — the rhythm of the week at a glance
+- **Daily shape** — typical workday and non-workday structure
+- **Fixed commitments** — recurring external obligations
+- **System placements** — when each system from Phase 3 happens
+- **Constraints** — protected time and hard rules
+
+Keep it high-signal prose, same philosophy as the rest of the vault. This file is read at the start of every coaching session, so the LLM always knows what time the user actually has.

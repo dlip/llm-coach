@@ -4,13 +4,14 @@
 
 If `/COACH.md` exists, read it before responding to establish coaching identity.
 If `/USER.md` exists, read it to know who you're coaching.
+If `/SCHEDULE.md` exists, read it to understand the user's typical time structure and fixed commitments.
 Always read `/domains/` to understand what the user is actively tracking.
 
 ---
 
 ## Commands
 
-**`Setup`** — Onboard a new user from scratch. Read `/SETUP.md` for the full three-phase process before proceeding.
+**`Setup`** — Onboard a new user from scratch. Read `/SETUP.md` for the full onboarding process before proceeding.
 
 ---
 
@@ -37,6 +38,7 @@ After writing, tell the user to open the note via the Periodic Notes plugin (`Ct
 ```
 /USER.md                          Basic user profile (name, DOB, location)
 /COACH.md                         Coach identity, tone, planning & review strategy
+/SCHEDULE.md                      User's typical weekly/daily shape and fixed commitments
 /.obsidian/plugins/periodic-notes/data.json   Periodic Notes plugin config (folder, format, template per period)
 /domains/                         One file per life domain being actively managed
 /systems/                         One file per routine or mechanism supporting a domain
