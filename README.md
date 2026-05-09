@@ -57,13 +57,15 @@ flowchart TD
 
 ### Directory Structure
 
+- `USER.md`: Basic user profile (name, DOB, location) *(System Output)*
+- `COACH.md`: Coach identity, tone, and planning & review strategy *(System Output, not committed)*
+- `SCHEDULE.md`: User's typical weekly/daily shape, fixed commitments, and system placements *(System Output)*
 - `yearly/`: Long-term vision, objectives, active priorities, and experiments (`YYYY.md`) *(System Output)*
 - `quarterly/`: Quarterly plans and reviews (`YYYY-[Q]Q.md`) *(Optional)*
 - `monthly/`: Monthly plans and reviews (`YYYY-MM.md`) *(Optional)*
 - `weekly/`: Weekly plans and reviews (`gggg-[W]ww.md`) *(Optional)*
 - `domains/`: Areas of ongoing responsibility and standard maintenance (e.g., `health.md`, `career.md`). These represent the different aspects of your life you want to manage. *(User Input)*
 - `systems/`: The mechanisms, routines, and environments that support your domains and goals (e.g., `habits.md`, `environment.md`). Good systems make success inevitable. *(User Input)*
-- `prompts/`: Directory containing the active LLM coach persona (`persona.md`) and the associated periodic planning and review prompts
 - `metrics/`: Output directory for external structured data (e.g., Apple Health exports, Oura ring data) *(User Input)*
 - `daily/`: Daily journals (`YYYY-MM-DD.md`) *(User Input)*
 - `projects/`: Actionable project files linked to priorities *(User Input)*
@@ -87,13 +89,21 @@ This system relies heavily on Obsidian's core features (Templates, Daily Notes) 
 
 ### 2. Setting Up Your Coach
 
-Run the single setup command to create your coach and configure your domains and systems in one guided session:
+Run the single setup command to create your coach and configure your domains, systems, and schedule in one guided session:
 
 ```text
 Setup
 ```
 
-The LLM will interview you one question at a time — first to establish your coaching style, tone, and goals (writing the result to `COACH.md`), then to identify your Domains and Systems and generate the corresponding files in `domains/` and `systems/`. `COACH.md` is not committed to the repo, so it stays personal to your vault.
+The LLM will interview you one question at a time, walking through:
+
+1. **User profile** — basic details written to `USER.md`
+2. **Coach identity** — your coaching style, tone, and planning/review strategy, written to `COACH.md`
+3. **Domains** — the life areas you actively manage, generated as files in `domains/`
+4. **Systems** — the routines and mechanisms that support your domains, generated as files in `systems/`
+5. **Schedule** — the actual shape of your week, fitted around your fixed commitments, written to `SCHEDULE.md`
+
+`COACH.md` is not committed to the repo, so it stays personal to your vault.
 
 ### 3. Bootstrapping Your Plan
 
@@ -107,14 +117,14 @@ The LLM will use the pre-provided `prompts/yearly_plan.md` workflow to interview
 
 Once the plan is generated, create new files in the `projects/` folder for any priority that requires multiple steps. Apply the `Project Template`, which includes `start_date` and `end_date` in the YAML frontmatter, and define the immediate Next Action.
 
-### 5. The Daily Workflow
+### 4. The Daily Workflow
 
 The daily tracking relies entirely on unstructured natural language text to minimize friction. Use the daily note to execute plans from higher levels and maintain a journal. No daily metrics or YAML frontmatter are required here.
 
 1. Use the pre-installed Periodic Notes plugin to open the note for the current day. Press `Cmd` or `Ctrl + P` to open the command palette and search for `Periodic Notes: Open daily note`.
 2. Write a quick unstructured brain-dump or list of what you intend to do, execute on your weekly plan, and log a brief summary of what happened during the day.
 
-### 6. LLM-Driven Reviews (Continuous Coaching)
+### 5. LLM-Driven Reviews (Continuous Coaching)
 
 Instead of maintaining a separate review log, **all reviews are LLM-driven and appended to the** **`# Review`** **section of your periodic notes (e.g.,** **`weekly/gggg-[W]ww.md`** **or** **`monthly/YYYY-MM.md`)**.
 
