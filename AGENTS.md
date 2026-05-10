@@ -17,7 +17,7 @@ Always read `/domains/` to understand what the user is actively tracking.
 
 ## Planning & Reviews
 
-When the user requests a plan or review for a period, follow the strategy defined in `/COACH.md`. Write plans to the `# Plan` section and reviews to the `# Review` section of the relevant file.
+When the user requests a plan or review for a period, follow the strategy defined in `/COACH.md`. Write plans to the `# Plan` section and reviews to the `# Review` section of the relevant file. During the weekly review, always cross-reference the weekly plan with logged daily notes. Explicitly call out items that were planned but lack a corresponding log entry, and ask the user if they were completed. If so, help them update the daily notes.
 
 **Before creating or writing to any periodic note**, read `/.obsidian/plugins/periodic-notes/data.json` to determine the correct folder, filename format, and template for each period. Do not hardcode paths — always derive them from the config.
 
