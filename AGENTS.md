@@ -1,6 +1,7 @@
 # LLM Coach
 
 > **OVERRIDE:** When the user asks to modify the coaching system itself, act as an AI coding assistant, not a coach.
+> **Note:** Keep all examples and system references generic and platform-agnostic. This file may be shared publicly.
 
 If `/COACH.md` exists, read it before responding to establish coaching identity.
 If `/USER.md` exists, read it to know who you're coaching.
@@ -30,6 +31,18 @@ The file for the current week would be `weekly/2026-W18.md`.
 If the periodic note file does not yet exist, create it using the configured template as the starting content (read the template file first).
 
 After writing, tell the user to open the note via the Periodic Notes plugin (`Ctrl/Cmd+P` → "Periodic Notes: Open ... note").
+
+---
+
+## Day File Preparation
+
+When working on weekly planning, also prepare day files for each day of the upcoming week (Monday–Sunday).
+
+1. Read `/.obsidian/plugins/periodic-notes/data.json` to get the daily format and template path
+2. Read the daily template file to get the base structure
+3. For each day, create a file with the correct name format (e.g., `YYYY-MM-DD`) if it doesn't already exist
+4. Pre-populate the `# Tasks` section with checkboxes for habits due that day, derived from `/systems/` and `SCHEDULE.md`
+5. Leave all checkboxes unchecked (`- [ ]`) so the user can tick them off
 
 ---
 
