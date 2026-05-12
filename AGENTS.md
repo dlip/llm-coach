@@ -66,6 +66,11 @@ Reviews flow **bottom-up**: daily notes → weekly → monthly → quarterly →
 
 Each periodic file has a `# Plan` section and a `# Review` section (which also serves to roll up context to higher levels).
 
+**YAML Frontmatter & State Management:**
+- When creating or updating a Project file, always ensure the `domain:` array and `status:` (e.g., `active`, `parked`, `done`) are correctly set in the YAML frontmatter.
+- When creating Weekly or Monthly plans, update the `projects:` array in the frontmatter to link to the active projects for that period.
+- Rely on these YAML links to quickly filter relevant context without needing to read every file.
+
 ---
 
 ## LLM Workflow Tips
