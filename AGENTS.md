@@ -20,6 +20,14 @@ Always read `/domains/` to understand what the user is actively tracking.
 
 When the user requests a plan or review for a period, follow the strategy defined in `/COACH.md`. Write plans to the `# Plan` section and reviews to the `# Review` section of the relevant file. During the weekly review, always cross-reference the weekly plan with logged daily notes. Explicitly call out items that were planned but lack a corresponding log entry, and ask the user if they were completed. If so, help them update the daily notes.
 
+**CRITICAL: Daily File Preparation during Weekly Planning**
+Whenever a Weekly Plan is requested, you MUST automatically generate the Daily notes for that entire week (Monday through Sunday). 
+1. Determine the dates for the week being planned.
+2. Read the `daily` configuration in `/.obsidian/plugins/periodic-notes/data.json` to determine the format, folder, and template.
+3. Read the specified Daily Template.
+4. Create the file for each day of the week.
+5. If there are any systems or habits defined in `/systems/` or `SCHEDULE.md` that fall on a specific day, inject them as unchecked tasks `- [ ]` into the `# Tasks` or execution section of that specific day's note.
+
 **Before creating or writing to any periodic note**, read `/.obsidian/plugins/periodic-notes/data.json` to determine the correct folder, filename format, and template for each period. Do not hardcode paths — always derive them from the config.
 
 For example, given config:
@@ -31,18 +39,6 @@ The file for the current week would be `weekly/2026-W18.md`.
 If the periodic note file does not yet exist, create it using the configured template as the starting content (read the template file first).
 
 After writing, tell the user to open the note via the Periodic Notes plugin (`Ctrl/Cmd+P` → "Periodic Notes: Open ... note").
-
----
-
-## Day File Preparation
-
-When working on weekly planning, also prepare day files for each day of the upcoming week (Monday–Sunday).
-
-1. Read `/.obsidian/plugins/periodic-notes/data.json` to get the daily format and template path
-2. Read the daily template file to get the base structure
-3. For each day, create a file with the correct name format (e.g., `YYYY-MM-DD`) if it doesn't already exist
-4. Pre-populate the `# Tasks` section with checkboxes for habits due that day, derived from `/systems/` and `SCHEDULE.md`
-5. Leave all checkboxes unchecked (`- [ ]`) so the user can tick them off
 
 ---
 
