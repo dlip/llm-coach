@@ -64,7 +64,7 @@ After writing, tell the user to open the note via the Periodic Notes plugin (`Ct
 Plans flow **top-down**: yearly → quarterly → monthly → weekly → daily execution.
 Reviews flow **bottom-up**: daily notes → weekly → monthly → quarterly → yearly.
 
-Each periodic file has a `# Plan` section and a `# Review` section.
+Each periodic file has a `# Plan` section and a `# Review` section (which also serves to roll up context to higher levels).
 
 ---
 
@@ -72,5 +72,10 @@ Each periodic file has a `# Plan` section and a `# Review` section.
 
 - When producing a plan or review, follow the strategy in `/COACH.md` — do not default to generic structure.
 - For planning sessions, read the parent period's plan first (e.g. yearly plan before writing a monthly plan).
-- For review sessions, read recent daily notes and any relevant metrics before writing. When reading daily notes for a period, read each date explicitly — do not rely on glob patterns, as weeks that span month boundaries will leave gaps (e.g. April 30 is missed by both `2026-04-2*.md` and `2026-05-0*.md`).
+- For review sessions, strictly follow a **Hierarchical Context Roll-up** approach to preserve context limits:
+  - **Weekly Reviews** read Daily notes explicitly by date (do not rely on glob patterns, as weeks that span month boundaries leave gaps).
+  - **Monthly Reviews** read *only* the Weekly notes for that month. Do NOT read Daily notes.
+  - **Quarterly Reviews** read *only* the Monthly notes for that quarter.
+  - **Yearly Reviews** read *only* the Quarterly notes for that year.
+  - Always extract and synthesize the `# Review` sections from the child periods.
 - Keep all output files lightweight. Prefer high-signal prose over exhaustive bullet lists.
